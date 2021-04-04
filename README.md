@@ -17,6 +17,7 @@ Bare minimum starter template using Flask and SQLAlchemy.
 3. Add/remove models
 4. Create migrations using `flask db migrate`
 5. Apply migrations to database using `flask db upgrade`
+6. Run tests with `pytest -v tests`
 
 ## Configuring database
 
