@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <h1>{{ message.title }}</h1>
+    <p>
+        <small>
+            <a href="{{ url_for('messages.get', _id=message.id) }}">{{ url_for('messages.get', _id=message.id) }}</a>
+        </small>
+    </p>
+    <p>
+        {{ message.content }}
+    </p>
+    <form method="post" action="{{ url_for('messages.delete', _id=message.id) }}">
+        <button name="delete" type="submit">Delete this message</button>
+    </form>
+{% endblock %}
